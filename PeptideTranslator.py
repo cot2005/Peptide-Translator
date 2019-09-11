@@ -16,7 +16,7 @@ import random
 from Levenshtein import distance
 import datetime
     
-def PeptideLibrary(peptideLibFile, AACodonFile, levenshteinLimit = 3):
+def PeptideTranslator(peptideLibFile, AACodonFile, levenshteinLimit = 3):
     #builds peptide library list
     with open(peptideLibFile) as f:
         peptideLib = f.read().splitlines()
